@@ -1,11 +1,15 @@
 <html>
   <head>
     <title>Halo Dunia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
 
       header {
@@ -21,7 +25,7 @@
 
       .button-container {
         display: flex;
-        flex-direction: column; /* Vertikal di mobile */
+        flex-direction: column;
         align-items: center;
         gap: 15px;
         margin: 30px 0;
@@ -41,13 +45,31 @@
         text-decoration: none;
         border-radius: 8px;
         transition: background-color 0.3s;
-        width: 850px; /* lebar seragam */
+        width: 850px;
         text-align: center;
-        font-size: 40px; /* ukuran teks lebih besar */
+        font-size: 40px;
       }
 
       .button-container a:hover {
         background-color: #333;
+      }
+
+      footer {
+        background-color: #111;
+        color: #fff;
+        text-align: center;
+        padding: 20px 10px;
+        margin-top: auto;
+        font-size: 16px;
+      }
+
+      footer a {
+        color: #00aced;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -57,9 +79,13 @@
     </header>
 
     <div class="button-container">
-      <a href="https://maps.app.goo.gl/zPNjq5hGaSkjmGxd7">Hairness Samarinda</a>
-      <a href="#tentang">Tentang Kami</a>
-      <a href="https://wa.me/6282255553833">Kontak</a>
+      <a href="https://maps.app.goo.gl/zPNjq5hGaSkjmGxd7"><i class="fas fa-map-marker-alt"></i> Hairness Samarinda</a>
+      <a href="#tentang"><i class="fas fa-info-circle"></i> Tentang Kami</a>
+      <a href="https://wa.me/6282255553833"><i class="fab fa-whatsapp"></i> Kontak</a>
     </div>
+
+    <footer>
+      &copy; 2025 Hairness. Dibuat dengan ❤️ oleh <a href="https://instagram.com/yourbrand" target="_blank">@hairness</a>
+    </footer>
   </body>
 </html>
